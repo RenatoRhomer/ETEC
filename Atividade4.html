@@ -1,0 +1,30 @@
+<html>
+<html>
+
+<head>
+    <script type="text/javascript">
+        function Calcula() {
+            Salarioatual = document.getElementById("Salarioatual").value;
+            Reajuste = document.getElementById("Reajuste").value;
+
+            Salariofinal = parseFloat(Salarioatual) + (parseFloat(Reajuste) / 100) * parseFloat(Salarioatual).toFixed(0);
+
+
+            alert('Salário reajustado:' + Salariofinal + ' Salário antes do reajuste:' + Salarioatual)
+
+        }
+
+    </script>
+
+</head>
+
+<body>
+    <h2>Algoritmo de reajuste de salário</h2>
+    <label>Digite o valor do sálario atual</label>
+    <input id="Salarioatual"><br><br>
+    <label>Digite o valor porcentual do reajuste que será aplicado</label>
+    <input id="Reajuste"><br><br>
+    <button onclick="Calcula()">Calcular</button>
+</body>
+
+</html>

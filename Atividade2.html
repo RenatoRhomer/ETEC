@@ -1,0 +1,23 @@
+<head>
+    <script type="text/javascript">
+    function Calcular(){
+        Base = document.getElementById("Base").value;
+        Altura = document.getElementById("Altura").value;
+        Resultado = parseFloat(Base) * parseFloat(Altura);
+
+        alert(Resultado);
+
+}
+        </script>
+</head>
+
+<body>
+    <h2>Descubra a área de um retângulo</h2>
+    <label>Digite o valor da Base</label>
+    <input id="Base" type="text" /><br>
+    <label>Digite o valor da Altura</label>
+    <input id="Altura" type="text" /><br>
+    <button id="calcular" onclick="Calcular()">Resultado</button>
+</body>
+
+</html>

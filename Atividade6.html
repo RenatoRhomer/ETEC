@@ -1,0 +1,31 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function Calcula() {
+            Carrosvendido = document.getElementById("Carrosvendido").value;
+            Valorvendas = document.getElementById("Valorvendas").value;
+            Salario = document.getElementById("Salario").value;
+            Valorcarro = document.getElementById("Valorcarro").value;
+
+            Salariofinal = parseFloat(Salario) + (parseFloat(Valorvendas) * 0.05) + (parseFloat(Valorcarro) * parseFloat(Carrosvendido));
+
+            alert('Salário final:' + Salariofinal)
+        }
+    </script>
+
+</head>
+
+<body>
+    <label>Digite o número de carros vendido</label>
+    <input id="Carrosvendido"><br><br>
+    <label>Digite o valor total de vendas</label>
+    <input id="Valorvendas"><br><br>
+    <label>Digite o valor do salário</label>
+    <input id="Salario"><br><br>
+    <label>Digite o valor de cada carro vendido</label>
+    <input id="Valorcarro"><br><br>
+    <button onclick="Calcula()">Calcular</button>
+</body>
+
+</html>

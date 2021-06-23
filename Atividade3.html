@@ -1,0 +1,41 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function Somar() {
+            total = document.getElementById("total").value;
+            validos = document.getElementById("validos").value;
+            nulos = document.getElementById("nulos").value;
+            branco = document.getElementById("branco").value;
+
+            somav = parseFloat(validos) + parseFloat(nulos) + parseFloat(branco);
+            branco = (parseFloat(branco) * 100 / parseFloat(total)).toFixed(0);
+            nulos = (parseFloat(nulos) * 100 / parseFloat(total)).toFixed(0);
+            validos = (parseFloat(validos) * 100 / parseFloat(total)).toFixed(0);
+
+
+            if (total >= somav) {
+                alert('O total de votos é ' + total + ' Votos validos ' + validos + '%' + ' Nulos ' + nulos + '%' + ' Brancos ' + branco + '%');
+            }
+            else {
+                alert('Quantidade de Votos nulos, validos e branco é maior que o total de votos');
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h2>Controle de votos de uma eleição</h2>
+    <label>Digite a quantidade total de eleitores</label>
+    <input id="total"><br><br>
+    <label>Digite a quantidade de votos válidos</label>
+    <input id="validos"><br><br>
+    <label>Digite a quantidade de votos nulos</label>
+    <input id="nulos"><br><br>
+    <label>Digite a quantidade de votos em branco</label>
+    <input id="branco"><br><br>
+    <button onclick="Somar()">Somar</button>
+    <p id="results"></p>
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+<html>
+
+<head>
+    <script type="text/javascript">
+        function Somar() {
+            VFabrica = document.getElementById("ValorFabrica").value;
+            Vfinal = parseFloat(VFabrica) * (1 + '.' + (73));
+
+            alert('Valor final ao consumidor:' + Vfinal);
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <h2>Custo de um carro 0</h2>
+    <label>Digite o valor de fábrica do carro</label>
+    <input id="ValorFabrica" type="text" /><br>
+    <button onclick="Somar()"> Calcular</button>
+</body>
+
+</html>
